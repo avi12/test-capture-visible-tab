@@ -1,6 +1,7 @@
-import { generateMnemonic } from "bip39"
+chrome.action.onClicked.addListener(async (tab) => {
+  await chrome.tabs.create({
+    url: await chrome.tabs.captureVisibleTab(tab.windowId)
+  })
+})
 
-console.log(
-  "Live now; make now always the most precious time. Now will never come again."
-)
-console.log(generateMnemonic())
+export {}
