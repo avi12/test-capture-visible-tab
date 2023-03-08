@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "run-browser": "web-ext run --no-config-discovery --start-url https://www.twitch.tv/codinggarden --verbose --target",
+    "run-browser": "web-ext run --no-config-discovery --start-url https://www.google.com --verbose --target",
     "run-chromium": "pnpm run-browser chromium --source-dir build/chrome-mv3-dev"
   },
   "dependencies": {
