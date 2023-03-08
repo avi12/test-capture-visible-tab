@@ -1,0 +1,34 @@
+{
+  "name": "test",
+  "displayName": "Test",
+  "version": "0.0.1",
+  "description": "test",
+  "author": "avi12",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "test": "plasmo test"
+  },
+  "dependencies": {
+    "bip39": "3.1.0",
+    "buffer": "6.0.3",
+    "events": "3.3.0",
+    "plasmo": "0.66.0",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.219",
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "prettier": "2.8.4",
+    "typescript": "4.9.5",
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.3"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
