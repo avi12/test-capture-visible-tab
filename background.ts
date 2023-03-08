@@ -1,7 +1,5 @@
-chrome.action.onClicked.addListener(async tab => {
-  await chrome.tabs.create({
-    url: await chrome.tabs.captureVisibleTab(tab.windowId)
-  });
+chrome.tabs.onActivated.addListener(async ({ windowId }) => {
+  console.log(await chrome.tabs.captureVisibleTab(windowId));
 });
 
 export {};

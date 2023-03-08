@@ -22,8 +22,8 @@
     "web-ext": "^7.5.0"
   },
   "manifest": {
-    "permissions": [
-      "activeTab"
+    "host_permissions": [
+      "<all_urls>"
     ]
   }
 }
